@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.farhaan.farhaan.MainActivity"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorMain"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="@string/heading"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/bgp"
+        android:scaleType="centerCrop"
+        android:id="@+id/bgpView"/>
+    
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/camera"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/camera"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/textbox"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/hint_recipe_name"
+        android:gravity="center"
+        android:inputType="text"
+        android:fontFamily="Helvetica Neue LT 55 Roman"
+        android:textColor="@color/colorText"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/recipeType"
+        android:background="@drawable/textbox"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/hint_recipe_type"
+        android:gravity="center"
+        android:fontFamily="Helvetica Neue LT 55 Roman"
+        android:textColor="@color/colorText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="@color/colorMain"
+            android:text="@string/first_level"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/levelOne"
+            android:fontFamily="Helvetica Neue LT 55 Roman"
+            android:textColor="@color/colorText"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="@color/colorWhite"
+            android:text="@string/second_level"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/levelTwo"
+            android:fontFamily="Helvetica Neue LT 55 Roman"
+            android:textColor="@color/colorText"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="@color/colorWhite"
+            android:text="@string/third_level"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/levelThree"
+            android:fontFamily="Helvetica Neue LT 55 Roman"
+            android:textColor="@color/colorText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/serve"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/textbox"
+                android:text="@string/number_serves"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/number_serves"
+                android:gravity="center"
+                android:fontFamily="Helvetica Neue LT 55 Roman"
+                android:textColor="@color/colorText"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/time"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/textbox"
+                android:text="@string/toCookTime"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/cookingTime"
+                android:gravity="center"
+                android:fontFamily="Helvetica Neue LT 55 Roman"
+                android:textColor="@color/colorText"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/textbox"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/edit_notes"
+        android:hint="Notes, tell us the story behind it"
+        android:inputType="textCapSentences|textMultiLine"
+        android:gravity="center_vertical"
+        android:fontFamily="Helvetica Neue LT 55 Roman"
+        android:textColor="@color/colorText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/next"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Next"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="25dp"
+                android:fontFamily="Helvetica Neue LT 55 Roman"
+                android:textColor="@color/colorText"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/next"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

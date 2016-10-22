@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Farhaan</string>
+    <string name="heading">Recipe Upload</string>
+    <string name="hint_recipe_name">Type the recipe name</string>
+    <string name="hint_recipe_type">Choose your recipe type</string>
+    <string name="first_level">Beginner</string>
+    <string name="second_level">Sous Chef</string>
+    <string name="third_level">Master</string>
+    <string name="number_serves">Serves</string>
+    <string name="toCookTime">Cooking Time</string>
+
+    <string-array name="recipe_types">
+        <item>Breakfast</item>
+        <item>Dessert</item>
+        <item>Salads</item>
+    </string-array>
+</resources>
